@@ -1,0 +1,85 @@
+
+
+
+#home {
+    color: blue;
+}
+
+#about {
+    color: blue;
+}
+
+#contact {
+    color: blue;
+}
+
+#home:hover {
+    color: green;
+}
+
+#about:hover {
+    color: green;
+}
+
+#contact:hover {
+    color: green;
+}
+
+li {
+    word-wrap: break-word;
+    line-height: 30px;
+    list-style: none;
+    padding-right: 40px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#myInput {
+    width: 200px;
+    margin-bottom: 25px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+#chatbox {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+    display: none;
+}
+
+#text {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+main {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#myBtn {
+    background-color: #03B5FF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 200px;
+    margin: 0 auto;
+}
