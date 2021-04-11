@@ -46,7 +46,7 @@ function respond(){
   const txt = text.toLowerCase(); //We must store lower case value in another variable, I do this so that the response is not case sensitive.
   input.value = "";
   //These are words that the user types in, and the arrays above are what the AI responds
-  var hello = ["hello", "howdy", "what's up", "whats up", "hola", "sup"];
+  var hello = ["hello", "howdy", "what's up", "whats up", "hola", "sup", "s up"];
   var age = ["how old are", "your age", "when were you", "ur age", "your birthday", "ur birthday", "how old are you", "yo age"];
   var love = ["i love you", "luv", "ily", "luv u", "love you", "love me", "luv me", "feel love", "you love"];
   var like = ["i like your", "i like you", "you're cool", "you are cool", "your cool", "you are my favorite"];
