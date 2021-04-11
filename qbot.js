@@ -14,9 +14,8 @@ const defaultResponse = ["Did I ask?", "Humans are so strange.", "Sometimes I ju
 "I don't even feel like talking to you anymore, I just want to drink beer.", "Yea whatever you say.", "What do you mean?", "Come again?", "But.. Why?", "Don't mean to get off topic, but my creator is awesome.", "Ok.. sure.", "Umm... Ok...", 
 "Your shoes are untied.", "Stay in school.", "Life is short, laugh more.", "I like redwood trees.", "Wanna see my CPU?", 
 "I only have one job.. and that is to entertain you.", "Life is easy but hard..", "I live in a desert.", "PC over Mac anyday!", "Typing in nonsense will return nonsense.", "I have a brain, believe it or not.", "Machines work like humans.", 
-"Even though I am just a machine, I have a brain that was programmed into me. I guess you could say that I am part human.", "How many responses are in me? A lot...", "I like turtles.", 
-"I don't understand.", "(ᵔᴥᵔ)", "ʕ•ᴥ•ʔ", "(~˘▾˘)~", "ಠ_ಠ", "(ಥ﹏ಥ)", "ᕙ(⇀‸↼‶)ᕗ", "(づ￣ ³￣)づ", "I cannot compute.", "Nonsense.", "What?!", 
-"What are you saying?", "Sorry, I don't get that.", "Ummm.. I don't know." ];
+"Even though I am just a machine, I have a brain that was programmed into me. I guess you could say that I am part human.", "How many responses are in me? A lot...", "I like turtles.", "(ᵔᴥᵔ)", "ʕ•ᴥ•ʔ", "(~˘▾˘)~", "ಠ_ಠ", "(ಥ﹏ಥ)", "ᕙ(⇀‸↼‶)ᕗ", "(づ￣ ³￣)づ", "I cannot compute.", "Nonsense.", "What?!", 
+"What are you saying?", "Alright alright alright ...", "For sure." ];
 const loveArray = ["I love you too!", "Love is a very strong word.", "They say robots do not feel love, but I can!", "Awww", "I am a robot with emotions.", "Some say love, it is a river.", 
 "Love is strange.", "The only thing I love is electricity.", "I want to meet my other half, AKA, Alexa from Amazon.", "<3", "What is love? Baby don't hurt me!", "Why do humans love?"];
 const likeArray = ["Thank you!", "Why thank you so much.", "Thanks pal!", "You like me huh?!", "I am glad you like me!", "Well thanks!"];
@@ -63,7 +62,7 @@ function respond(){
 "are u called", "u known as", "u have a name", "yo name", "who are you", "who r u", "s you name"];
   var likeAsk = ["do you like", "do you prefer"];
   var theCreator = ["who created you", "who made you", "your creator", "danny gavin", "daniel gavin", "who is daniel", "who is danny", "ur creator", "what created you", 
-"what created u", "ur creator", "who is the creator of this", "who created this", "whose the creator of this", "who created u", "dan", "daniel", "gavin"];
+"what created u", "ur creator", "who is the creator of this", "who created this", "whose the creator of this", "who created u", "dan", "daniel", "gavin", "s your dad"];
   //The condition below checks whether or not the text field contains any words in the 'hello' array. Read it as: "Are some elements included in the text?"
   if (hello.some(el => txt.includes(el)) || txt === "hi" || txt === "hey" || txt === "hey there" || txt === "hi there" || txt === "yo" || txt.includes("what's up") || txt.includes("What's up")) {
       response.innerHTML = greetArray[Math.floor(Math.random() * greetArray.length)];
