@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap');
 
 #home {
     color: blue;
@@ -23,6 +22,10 @@
 
 #contact:hover {
     color: green;
+}
+
+a {
+    font-family: 'Blinker', sans-serif;
 }
 
 li {
@@ -52,7 +55,7 @@ a:hover {
     display: none;
 }
 
-#text {
+.text {
     max-width: 500px;
     margin: 0 auto;
     line-height: 30px;
@@ -82,4 +85,8 @@ nav {
 #logo {
     width: 200px;
     margin: 0 auto;
+}
+
+#credit {
+    font-family: 'Blinker', sans-serif;
 }
