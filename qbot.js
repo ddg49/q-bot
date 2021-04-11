@@ -65,7 +65,7 @@ function respond(){
   var theCreator = ["who created you", "who made you", "your creator", "danny gavin", "daniel gavin", "who is daniel", "who is danny", "ur creator", "what created you", 
 "what created u", "ur creator", "who is the creator of this", "who created this", "whose the creator of this", "who created u", "dan", "daniel", "gavin"];
   //The condition below checks whether or not the text field contains any words in the 'hello' array. Read it as: "Are some elements included in the text?"
-  if (hello.some(el => txt.includes(el)) || txt === "hi" || txt === "hey" || txt === "hey there" || txt === "hi there" || txt === "yo") {
+  if (hello.some(el => txt.includes(el)) || txt === "hi" || txt === "hey" || txt === "hey there" || txt === "hi there" || txt === "yo" || txt.includes("what's up") ) {
       response.innerHTML = greetArray[Math.floor(Math.random() * greetArray.length)];
   } else if (age.some(el => txt.includes(el))) {
       var d = new Date();
