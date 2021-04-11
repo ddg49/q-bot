@@ -48,8 +48,8 @@ function respond(){
   //These are words that the user types in, and the arrays above are what the AI responds
   var hello = ["hello", "howdy", "what's up", "whats up", "hola", "sup", "s up"];
   var age = ["how old are", "your age", "when were you", "ur age", "your birthday", "ur birthday", "how old are you", "yo age"];
-  var love = ["i love you", "luv", "ily", "luv u", "love you", "love me", "luv me", "feel love", "you love"];
-  var like = ["i like your", "i like you", "you're cool", "you are cool", "your cool", "you are my favorite"];
+  var love = ["i love you", "luv", "ily", "luv u", "love you", "love me", "luv me", "feel love", "you love", "love"];
+  var like = ["i like your", "i like you", "you're cool", "you are cool", "your cool", "you are my favorite", "s cool"];
   var timeAsk = ["what time is it", "whats the time", "what's the time", "tell time", "me the time", "time it is", "time is it", "what is the time", "what the time"];
   var checkIn = ["how are you", "how are you doing", "how goes it", "how do you feel", "are you feeling", "you feel good"];
   var goodAsk = ["good wbu", "good hbu", "good yourself?", "good what about you", "great wbu", "great hbu", "okay wbu", "okay what about you", "good how about you", "thats good", "that's good", "so good", "i'm okay", "i am okay", "im okay", "is good", "is great", "is awesome", 
