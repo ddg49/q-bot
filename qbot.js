@@ -15,7 +15,7 @@ const defaultResponse = ["Did I ask?", "Humans are so strange.", "Sometimes I ju
 "Your shoes are untied.", "Stay in school.", "Life is short, laugh more.", "I like redwood trees.", "Wanna see my CPU?", 
 "I only have one job.. and that is to entertain you.", "Life is easy but hard..", "I live in a desert.", "PC over Mac anyday!", "Typing in nonsense will return nonsense.", "I have a brain, believe it or not.", "Machines work like humans.", 
 "Even though I am just a machine, I have a brain that was programmed into me. I guess you could say that I am part human.", "How many responses are in me? A lot...", "I like turtles.", 
-"I don't understand.", "( ͡° ͜ʖ ͡°)", "(ᵔᴥᵔ)", "ʕ•ᴥ•ʔ", "(~˘▾˘)~", "ಠ_ಠ", "(ง ͠° ͟ل͜ ͡°)ง", "(͡ ͡° ͜ つ ͡͡°)", "(ಥ﹏ಥ)", "ᕙ(⇀‸↼‶)ᕗ", "(づ￣ ³￣)づ", "I cannot compute.", "Nonsense.", "What?!", 
+"I don't understand.", "(ᵔᴥᵔ)", "ʕ•ᴥ•ʔ", "(~˘▾˘)~", "ಠ_ಠ", "(ಥ﹏ಥ)", "ᕙ(⇀‸↼‶)ᕗ", "(づ￣ ³￣)づ", "I cannot compute.", "Nonsense.", "What?!", 
 "What are you saying?", "Sorry, I don't get that.", "Ummm.. I don't know." ];
 const loveArray = ["I love you too!", "Love is a very strong word.", "They say robots do not feel love, but I can!", "Awww", "I am a robot with emotions.", "Some say love, it is a river.", 
 "Love is strange.", "The only thing I love is electricity.", "I want to meet my other half, AKA, Alexa from Amazon.", "<3", "What is love? Baby don't hurt me!", "Why do humans love?"];
@@ -65,7 +65,7 @@ function respond(){
   var theCreator = ["who created you", "who made you", "your creator", "danny gavin", "daniel gavin", "who is daniel", "who is danny", "ur creator", "what created you", 
 "what created u", "ur creator", "who is the creator of this", "who created this", "whose the creator of this", "who created u", "dan", "daniel", "gavin"];
   //The condition below checks whether or not the text field contains any words in the 'hello' array. Read it as: "Are some elements included in the text?"
-  if (hello.some(el => txt.includes(el)) || txt === "hi" || txt === "hey" || txt === "hey there" || txt === "hi there" || txt === "yo" || txt.includes("what's up") ) {
+  if (hello.some(el => txt.includes(el)) || txt === "hi" || txt === "hey" || txt === "hey there" || txt === "hi there" || txt === "yo" || txt.includes("what's up") || txt.includes("What's up")) {
       response.innerHTML = greetArray[Math.floor(Math.random() * greetArray.length)];
   } else if (age.some(el => txt.includes(el))) {
       var d = new Date();
