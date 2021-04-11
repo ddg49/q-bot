@@ -51,7 +51,7 @@ function respond(){
   var love = ["i love you", "luv", "ily", "luv u", "love you", "love me", "luv me", "feel love", "you love", "love"];
   var like = ["i like your", "i like you", "you're cool", "you are cool", "your cool", "you are my favorite", "s cool"];
   var timeAsk = ["what time is it", "whats the time", "what's the time", "tell time", "me the time", "time it is", "time is it", "what is the time", "what the time"];
-  var checkIn = ["how are you", "how are you doing", "how goes it", "how do you feel", "are you feeling", "you feel good"];
+  var checkIn = ["how are you", "how are you doing", "how goes it", "how do you feel", "are you feeling", "you feel good", "how r u"];
   var goodAsk = ["good wbu", "good hbu", "good yourself?", "good what about you", "great wbu", "great hbu", "okay wbu", "okay what about you", "good how about you", "thats good", "that's good", "so good", "i'm okay", "i am okay", "im okay", "is good", "is great", "is awesome", 
 "is awesome", "is my favorite", "s good", "s great", "s awesome", "s fantastic"];
   var likeTwo = ["i like", "i love", "i enjoy", "i really like", "i really love", "i really enjoy", "i also like"];
