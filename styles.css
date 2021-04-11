@@ -53,6 +53,7 @@ a:hover {
     background-color: blanchedalmond;
     margin: 0 auto;
     display: none;
+    border-radius: 5px;
 }
 
 .text {
