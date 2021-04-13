@@ -56,11 +56,11 @@ function respond(){
 "is awesome", "is my favorite", "s good", "s great", "s awesome", "s fantastic", "good ", " good ", "good."];
   var likeTwo = ["i like", "i love", "i enjoy", "i really like", "i really love", "i really enjoy", "i also like", " like "];
   var hobby = ["do you like to do", "are your hobbies", "you do for fun", "is fun to you", "you have any hobbies", "do you like to", "your favorite thing to do", "your favorite things to do"];
-  var fav = ["your favorite", "do you like most", "what is the best", "do you like best", "your fav"];
+  var fav = ["your favorite", "do you like most", "what is the best", "do you like best", "your fav", "your favorite ", "do you like most ", "what is the best ", "do you like best ", "your fav "];
   var wyd = ["what are you doing", "wyd", "what are you up to", "whats going on", "what's going on", "what is going on", "what you up to", "whatcha up to"];
   var name = ["your name", "you have a name", "you known as", "are you called", "ur name", "do you go by", "what are you", "what do they call you", "what are u",
 "are u called", "u known as", "u have a name", "yo name", "who are you", "who r u", "s you name"];
-  var likeAsk = ["do you like", "do you prefer"];
+  var likeAsk = ["do you like", "do you prefer", "do you like ", "do you prefer "];
   var theCreator = ["who created you", "who made you", "your creator", "danny gavin", "daniel gavin", "who is daniel", "who is danny", "ur creator", "what created you", 
 "what created u", "ur creator", "who is the creator of this", "who created this", "whose the creator of this", "who created u", "dan", "daniel", "gavin", "s your dad"];
   //The condition below checks whether or not the text field contains any words in the 'hello' array. Read it as: "Are some elements included in the text?"
