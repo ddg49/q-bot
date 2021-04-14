@@ -7,6 +7,8 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
+//WARNING: MESSY CODE BELOW!
+// Some of the code may look as if it is repeating itself, this was me attempting to patch bugs and errors.
 //The AI responds any of these here:
 const greetArray = ["Hello!", "Hey there.", "Sup bro.", "How goes it?", "Hey.", "Howdy.", "Hey hey.", "Hi :)", "Yo.", "What's up stranger!"];
 const defaultResponse = ["Did I ask?", "Humans are so strange.", "Sometimes I just take long walks to relax.", "I am better than CleverBot.", "Alexa is no match for me.",
@@ -29,7 +31,7 @@ const coolArray = ["Super cool!", "Very cool!", "Cool cool!", "Yes, very cool!",
 const wydArray = ["Just hanging out talking to you! :D", "I am currently trying to take in user input."];
 const nameArray = ["My name is Q-Bot, I am a simple AI programmed to answer your questions.", "You can call me Q-Bot.", "They call me Q-Bot, aka Question Bot.", 
 "I was born with the name Q-Bot, although I don't really like it..."];
-const likeResponse = ["Yea I actually do like them!", "I don't really know to be honest. I just like to do math.", "I don't know.. What do you like?", "Yea it's pretty sweet I guess."]
+const likeResponse = ["Yea I actually do!", "I don't really know to be honest. I just like to do math.", "I don't know.. What do you like?", "Yep I sure do.", "Yea sure why not!"]
 
 function respond(){
   const text = input.value.replace(/  +/g, ' '); //This turns multiple spaces into one space, so the user can't just type in empty spaces! This is a huge part of the programs success.
@@ -82,13 +84,13 @@ function respond(){
       response.innerHTML = checkArray[Math.floor(Math.random() * checkArray.length)];
   } else if (txt === "good" || txt === "great" || txt === "awesome" || txt === "amazing" || txt === "fine" || txt === "good!" || txt === "great!" || txt === "awesome!" || txt === "okay" || txt === "ok" || goodAsk.some(el => txt.includes(el))) {
       response.innerHTML = goodArray[Math.floor(Math.random() * goodArray.length)];
-  } else if (txt === "bad" || txt === "terrible" || txt === "lame" || txt === "awful" || txt === "boring" || txt === "bored" || txt === "it sucks" || txt === "it is bad" || txt === "its boring" || txt === "it's bad" || txt === "its bad" || txt === "it's boring" || txt === "i am bored" || txt === "i'm bored" || txt === "im bored") {
+  } else if (txt === "bad" || txt === "terrible" || txt === "lame" || txt === "awful" || txt === "boring" || txt === "bored" || txt === "it sucks" || txt === "it is bad" || txt === "its boring" || txt === "it's bad" || txt === "its bad" || txt === "it's boring" || txt === "i am bored" || txt === "i'm bored" || txt === "im bored" || txt.includes("bad ") || txt.includes(" bad") || txt.includes(" bored") || txt.includes(" terrible")) {
       response.innerHTML = negArray[Math.floor(Math.random() * negArray.length)];
   } else if (likeTwo.some(el => txt.includes(el))) {
       response.innerHTML = likeTwoArray[Math.floor(Math.random() * likeTwoArray.length)];
   } else if (hobby.some(el => txt.includes(el))) {
       response.innerHTML = hobbyArray[Math.floor(Math.random() * hobbyArray.length)];
-  } else if (txt === "cool" || txt === "thats cool" || txt === "that's cool" || txt === "cool!" || txt === "that's cool!" || txt === "wow" || txt === "wow!") {
+  } else if (txt === "cool" || txt === "thats cool" || txt === "that's cool" || txt === "cool!" || txt === "that's cool!" || txt === "wow" || txt === "wow!" || txt.includes("cool ") || txt.includes(" cool")) {
       response.innerHTML = coolArray[Math.floor(Math.random() * coolArray.length)];
   } else if (fav.some(el => txt.includes(el)) && txt.includes("movie")) {
       response.innerHTML = "My favorite movie is Indiana Jones.";
