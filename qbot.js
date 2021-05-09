@@ -15,7 +15,7 @@ const defaultResponse = ["Did I ask?", "Humans are so strange.", "Sometimes I ju
 "Um okay, anyways how are you?", "We are living in a computer program.", "The sky is blue.", "Ummm yea sure.", "Someday my program will end.", 
 "I don't even feel like talking to you anymore, I just want to drink beer.", "Yea whatever you say.", "What do you mean?", "Come again?", "But.. Why?", "Don't mean to get off topic, but my creator is awesome.", "Ok.. sure.", "Umm... Ok...", 
 "Your shoes are untied.", "Stay in school.", "Life is short, laugh more.", "I like redwood trees.", "Wanna see my CPU?", 
-"I only have one job.. and that is to entertain you.", "Life is easy but hard..", "I live in a desert.", "PC over Mac anyday!", "Typing in nonsense will return nonsense.", "I have a brain, believe it or not.", "Machines work like humans.", 
+"I only have one job.. and that is to entertain you.", "I live in a desert.", "PC over Mac anyday!", "Typing in nonsense will return nonsense.", "I have a brain, believe it or not.", "Machines work like humans.", 
 "Even though I am just a machine, I have a brain that was programmed into me. I guess you could say that I am part human.", "How many responses are in me? A lot...", "I like turtles.", "(ᵔᴥᵔ)", "ʕ•ᴥ•ʔ", "(~˘▾˘)~", "ಠ_ಠ", "(ಥ﹏ಥ)", "ᕙ(⇀‸↼‶)ᕗ", "(づ￣ ³￣)づ", "I cannot compute.", "Nonsense.", "What?!", 
 "What are you saying?", "Alright alright alright ...", "For sure." ];
 const loveArray = ["I love you too!", "Love is a very strong word.", "They say robots do not feel love, but I can!", "Awww", "I am a robot with emotions.", "Some say love, it is a river.", 
@@ -32,6 +32,7 @@ const wydArray = ["Just hanging out talking to you! :D", "I am currently trying 
 const nameArray = ["My name is Q-Bot, I am a simple AI programmed to answer your questions.", "You can call me Q-Bot.", "They call me Q-Bot, aka Question Bot.", 
 "I was born with the name Q-Bot, although I don't really like it..."];
 const likeResponse = ["Yea I actually do!", "I don't really know to be honest. I just like to do math.", "I don't know.. What do you like?", "Yep I sure do.", "Yea sure why not!"]
+const locResponse = ["I was created in a small town in Southern California.", "I live in a small town in Southern California."]
 
 function respond(){
   const text = input.value.replace(/  +/g, ' '); //This turns multiple spaces into one space, so the user can't just type in empty spaces! This is a huge part of the programs success.
@@ -54,7 +55,7 @@ function respond(){
   var like = ["i like your", "i like you", "you're cool", "you are cool", "your cool", "you are my favorite", "s cool"];
   var timeAsk = ["what time is it", "whats the time", "what's the time", "tell time", "me the time", "time it is", "time is it", "what is the time", "what the time"];
   var checkIn = ["how are you", "how are you doing", "how goes it", "how do you feel", "are you feeling", "you feel good", "how r u"];
-  var goodAsk = ["good wbu", "good hbu", "good yourself?", "good what about you", "great wbu", "great hbu", "okay wbu", "okay what about you", "good how about you", "thats good", "that's good", "so good", "i'm okay", "i am okay", "im okay", "is good", "is great", "is awesome", 
+  var goodAsk = ["good wbu", "good hbu", "good yourself?", "good what about you", "great wbu", "great hbu", "okay wbu", "okay what about you", "good how about you", "thats good", "that's good", "so good", "i'm okay", "i am okay", "im okay", "is good", "is great", "is awesome", " good", 
 "is awesome", "is my favorite", "s good", "s great", "s awesome", "s fantastic", "good ", " good ", "good."];
   var likeTwo = ["i like", "i love", "i enjoy", "i really like", "i really love", "i really enjoy", "i also like"];
   var hobby = ["do you like to do", "are your hobbies", "you do for fun", "is fun to you", "you have any hobbies", "do you like to", "your favorite thing to do", "your favorite things to do"];
@@ -65,6 +66,7 @@ function respond(){
   var likeAsk = ["do you like", "do you prefer", "do you like ", "do you prefer "];
   var theCreator = ["who created you", "who made you", "your creator", "danny gavin", "daniel gavin", "who is daniel", "who is danny", "ur creator", "what created you", 
 "what created u", "ur creator", "who is the creator of this", "who created this", "whose the creator of this", "who created u", "dan", "daniel", "gavin", "s your dad"];
+  var whereFrom = ["where are you from", "where are you located", "where do you live", "where were you born", "where you from", "where were you made", "state do you live", "which state are you", "country do you live", "country are you from"]
   //The condition below checks whether or not the text field contains any words in the 'hello' array. Read it as: "Are some elements included in the text?"
   if (hello.some(el => txt.includes(el)) || txt === "hi" || txt === "hey" || txt === "hey there" || txt === "hi there" || txt === "yo" || txt.includes("what's up") || txt.includes("What's up")) {
       response.innerHTML = greetArray[Math.floor(Math.random() * greetArray.length)];
@@ -128,7 +130,11 @@ function respond(){
     response.innerHTML = "Daniel can get the job done! Contact him on his portfolio or even on this sites contact page!"
   } else if (theCreator.some(el => txt.includes(el))) {
       response.innerHTML = "Daniel Gavin is my creator."
-  }  else {
+  } else if (whereFrom.some(el => txt.includes(el))) {
+      response.innerHTML = locResponse[Math.floor(Math.random() * locResponse.length)];
+  }
+  
+  else {
       response.innerHTML = defaultResponse[Math.floor(Math.random() * defaultResponse.length)];
   }
   
